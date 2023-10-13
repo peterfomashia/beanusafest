@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.navbar img {
+  height: 5rem;
+  margin-left: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: white;
+}
+.navbar a:hover {
+  cursor: pointer;
+  color: rgb(198, 198, 28);
+  transition: 0.5s;
+}
+
+.awal {
+  font-weight: bold;
+  font-size: 1.8rem;
+  
+}
+h1{
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+}
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+hr {
+  width: 80%;
+  border: none;
+  height: 1rem;
+  background: #333;
+  position: relative;
+}
+
+.mt h1 {
+  margin-top: 5rem;
+}
+
+hr::before {
+  content: "★";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0 10px;
+}
+
+.hrku {
+  border: none;
+  width: 50%;
+  height: 1rem;
+}
+img,
+div,
+iframe {
+  max-width: 100%;
+}
+
+.btn-daftar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border: none;
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+}
+
+.btn-daftar a {
+  text-decoration: none;
+  color: white;
+}
+.btn-daftar a:hover {
+  cursor: pointer;
+  color: rgb(196, 196, 25);
+  transition: 0.5s;
+}
+.btn-daftar:hover {
+  background-color: rgb(17, 111, 111);
+}
+.navbar.navbar-hidden {
+  transform: translateY(-100%); /* Ini akan menyembunyikan navbar */
+  background-color: green !important;
+}
+
+.navbar.bg-custom {
+  background-color: rgb(17, 111, 111);
+}
+
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+}
+
+.scholarship img {
+  height: 10rem;
+}
+
+.custom-margin-top {
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.scholarship {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.scholarship img {
+    height: 12rem;
+}
+
+.tanoto {
+  height: 10rem;
+}
+
+.organized img {
+  height: 3rem;
+}
+
+.Footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(17, 111, 111);
+  margin-top: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.Footer2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: green;
+  padding: 2rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.Footer1 div {
+  color: white;
+}
+
+.logo img {
+  height: 7rem;
+}
+
+.accordion {
+  max-width: 1500px;
+  width: 100%;
+}
+
+.accordion-item {
+  margin: 2rem;
+}
+
+.mt {
+  margin-top: 8rem;
+}
+
+/* CSS Dasar */
+body {
+  font-size: 16px; /* Gunakan px untuk ukuran font dasar */
+}
+
+/* Penyesuaian untuk Mobile (Disebut juga sebagai mobile-first approach) */
+.Footer1,
+.Footer2 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.Footer1 div,
+.Footer2 div {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.logo img {
+  margin: 0 auto;
+}
+
+.mt {
+  margin-top: 4rem;
+}
+
+.scholarship img {
+  height: 5rem;
+  margin: 1rem;
+}
+
+/* Penyesuaian untuk Tablet ke atas */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px;
+  }
+  .awal {
+    font-size: 3rem;
+  }
+
+  .navbar img {
+    margin-left: 1rem;
+    height: 5rem;
+  }
+
+  .navbar a {
+    margin-right: 3rem;
+    background-color: transparent;
+    color: white;
+  }
+
+  .Footer1,
+  .Footer2 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .Footer1 div,
+  .Footer2 div {
+    margin: 0;
+    width: auto;
+  }
+
+  .mt {
+    margin-top: 8rem;
+  }
+
+  .scholarship img {
+    height: 10rem;
+    margin: 1.5rem;
+  }
+}
+
+/* Penyesuaian untuk Desktop */
+@media (min-width: 1024px) {
+  .scholarship img {
+    margin: 2rem;
+  }
+  .awal {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
